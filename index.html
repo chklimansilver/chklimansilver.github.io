@@ -35,7 +35,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="22yo" 
-		 onclick="22yo()" />
+		 onclick="f22yo()" />
 	</div>
       </div>
       <div class="block">
@@ -92,7 +92,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="22yo Student" 
-		 onclick="22yoS()" />
+		 onclick="f22yoS()" />
 	</div>
 
       </div>
@@ -102,7 +102,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="22yo Female Student" 
-		 onclick="22yoFS()" />
+		 onclick="f22yoFS()" />
 	</div>
 
       </div>
@@ -258,7 +258,7 @@ var legend = svg.selectAll(".legend")
 };
 
 
-function 22yo() {
+function f22yo() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
@@ -695,7 +695,7 @@ var legend = svg.selectAll(".legend")
 
 
 };
-function 22yoS() {
+function f22yoS() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#90C3D4"]);
 var svg = d3.select("body").append("svg")
@@ -768,7 +768,7 @@ var legend = svg.selectAll(".legend")
 
 };
 
-function 22yoFS() {
+function f22yoFS() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
