@@ -35,7 +35,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="22yo" 
-		 onclick="22yo()" />
+		 onclick="updateData()" />
 	</div>
       </div>
       <div class="block">
@@ -43,7 +43,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="Students" 
-		 onclick="Students()" />
+		 onclick="updateData2()" />
 	</div>
       </div>
       
@@ -52,7 +52,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="Women" 
-		 onclick="Women()" />
+		 onclick="updateData3()" />
 	</div>
       </div>
             <div class="block">
@@ -60,7 +60,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="Everyone" 
-		 onclick="Everyone()" />
+		 onclick="updateData4()" />
 	</div>
 </div>     
       <div class="block">
@@ -68,7 +68,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="Female Students" 
-		 onclick="FS()" />
+		 onclick="updateData5()" />
 	</div>
 	</div>
       <div class="block">
@@ -76,7 +76,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="Female 22yo" 
-		 onclick="F2yo()" />
+		 onclick="updateData6()" />
 	</div>
 	
 
@@ -92,7 +92,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="22yo Student" 
-		 onclick="22yoS()" />
+		 onclick="updateData7()" />
 	</div>
 
       </div>
@@ -102,7 +102,7 @@
 	  <input name="update" 
 		 type="button" 
 		 value="22yo Female Student" 
-		 onclick="22yoFS()" />
+		 onclick="updateData8()" />
 	</div>
 
       </div>
@@ -173,8 +173,8 @@ activity.selectAll("rect")
 .style("fill", function(d) { return color(d.name); });
 });
 
-};
-function 22yo() {
+
+function updateData() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
@@ -247,7 +247,7 @@ var legend = svg.selectAll(".legend")
 
 };
 
-function Women() {
+function updateData3() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
@@ -320,7 +320,7 @@ var legend = svg.selectAll(".legend")
 
 };
 
-function Students() {
+function updateData2() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
@@ -394,7 +394,7 @@ var legend = svg.selectAll(".legend")
 };
 
 
-function Everyone() {
+function updateData4() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
@@ -466,7 +466,7 @@ var legend = svg.selectAll(".legend")
 
 
 };
-function FS() {
+function updateData5() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
@@ -539,7 +539,7 @@ var legend = svg.selectAll(".legend")
 
 };
 
-function F2yo() {
+function updateData6() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
@@ -611,11 +611,7 @@ var legend = svg.selectAll(".legend")
 
 
 };
-
-
-
-
-function 22yoS() {
+function updateData7() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
@@ -688,7 +684,7 @@ var legend = svg.selectAll(".legend")
 
 };
 
-function 22yoFS() {
+function updateData8() {
 d3.select("body").select("svg").remove();
 var color = d3.scale.ordinal().range(["#a05d56", "#ff8c00"]);
 var svg = d3.select("body").append("svg")
