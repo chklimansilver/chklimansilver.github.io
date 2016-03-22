@@ -153,7 +153,7 @@ d.ages = names.map(function(name) { return {name: name, value: +d[name]}; });
 x0.domain(data.map(function(d) { return d.Activity; }));
 x1.domain(names).rangeRoundBands([0, x0.rangeBand()]);
 y.domain([0, d3.max(data, function(d) { return d3.max(d.ages, function(d) { return d.value; }); })]);
-<
+
 svg.append("g")
 .attr("class", "x axis")
 .attr("transform", "translate(0," + h + ")")
@@ -825,6 +825,6 @@ var legend = svg.selectAll(".legend")
 };
     </script>
     <br> <br> <br> <br> <br>
-<font size="10"> Some code heavily inspired by Mike Bostock </font>
+<font size="6"> Some code heavily inspired by Mike Bostock </font>
   </body>
   </html>
